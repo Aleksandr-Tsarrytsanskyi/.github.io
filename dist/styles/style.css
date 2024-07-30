@@ -1,0 +1,613 @@
+/*!**********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/style.scss ***!
+  \**********************************************************************************************************************************************************/
+body {
+  background-color: #282828;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.table {
+  display: table;
+  margin: auto;
+}
+
+.row {
+  display: table-row;
+}
+
+.cell {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.clear {
+  clear: both;
+}
+
+p,
+h1,
+h3 {
+  color: #fff;
+}
+
+header p {
+  margin: 0;
+  font-size: 160%;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header h1 {
+  font-size: 380%;
+  margin: 100px 0 60px 60px;
+}
+
+header h3 {
+  margin-left: 60px;
+  font-weight: 100;
+  font-size: 350%;
+}
+
+header .logo {
+  float: left;
+  margin-left: 60px;
+  margin-top: 10px;
+  margin-bottom: 100px;
+}
+
+header {
+  background: url("/images/header.png") no-repeat right;
+  height: 1080px;
+}
+
+#main .vision {
+  background: url("/images/bg_vision.png") no-repeat right;
+  height: 1080px;
+  margin-top: -48px;
+  padding-left: 60px;
+}
+
+#main .width {
+  width: 707px;
+  padding-top: 160px;
+}
+
+#main .vision p {
+  font-size: 200%;
+}
+
+#main h3 {
+  font-size: 300%;
+}
+
+header .topmenu {
+  float: right;
+}
+
+header .topmenu ul {
+  list-style: none;
+  margin: 35px 40px 0;
+  padding: 0;
+}
+
+header .bg_top {
+  background-color: #282828;
+  display: inline-block;
+  width: 100%;
+  height: 90px;
+}
+
+header .topmenu ul li {
+  float: left;
+  margin-left: 25px;
+}
+
+header .topmenu ul li a {
+  font-size: 120%;
+  color: #fff;
+  font-weight: bold;
+}
+
+header .topmenu ul li a:hover {
+  color: #f81227;
+  font-weight: bold;
+}
+
+.topmenu ul li img {
+  height: 24px;
+}
+
+header .hover_img {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAByElEQVR4nN1VS0oDQRBtP3HlIl2DNzBVIeAqO4m40IUBkQiid9AgHkE3YvQUgnoQr+AfP6BGETcuxHSPgiM1M8n0JJlPghttKEi6Zt6refW6Woh/vRwxPayBlhTggQa6URI/ODTQnQI8siWuOKKY6QtcSywzkAZy4gPvtUULMVUWRhRQTUt8TgajUChJZ63fgLuOEAMdBApop1dg7cWDI8SQgnxVAdoeCdW6SfHEyYakyfZcQ2IpClxJnAuKzM0qwE83l83Phwn8lyJ7AQFwbM8AN/znbtkcv07gsFySLtxnLayYAK+eRFhKIDhOaw4F9MY518Lc/QiHbMZ9YRpzKMA99zC5lUSQ6AiCVOaQ+BJUJPGdN52xwqh/er/S2DWpdybBlbc5XuD/PAbSkKQnADz0dMtXm3tpSLqBN7K5KU8iqrc2bYnLfmNOHCEGTRKdQGD2KtxD3A7Zjiemm8jiarih9BgzjzrBJdUZnDHbdMst+i8pZeFMQIDlOBLD/9/mCOm6mv72SdZMuRIJTEmiFgOah0gBnmqgdVvSRDw4bSWCh+SysKIlXqeo+pIl7Ak8+Jpipnll8iDjw+gFnWtJ+3yT9X1l/pn1Ay/cTw8TarSfAAAAAElFTkSuQmCC)
+    no-repeat center;
+  width: 24px;
+  height: 24px;
+}
+
+#language {
+  position: absolute;
+  transform: translate(-5%, -5%);
+  width: 24px;
+  height: 24px;
+}
+
+header .hover {
+  cursor: pointer;
+}
+
+.lange_color {
+  color: green;
+}
+
+header .topmenu ul li:last-child .english {
+  margin-left: 30px;
+}
+
+#lng {
+  margin: 20px 0px 0px -370px;
+  padding: 0;
+  width: 477px;
+  height: 0;
+  font-size: 0;
+  position: absolute;
+  overflow: hidden;
+  display: block;
+  transition: 0.3s all;
+}
+
+#lng li {
+  margin-left: 20px;
+}
+
+#lng img {
+  margin: 0px 5px -5px 0px;
+}
+
+#lng a {
+  margin-top: -20px;
+  margin-bottom: -10px;
+}
+
+header .hover_lng {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  margin: -1px 0px 0px -1px;
+}
+
+.hide {
+  display: none;
+}
+.show_anime {
+  height: 100px !important;
+  font-size: 100% !important;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+}
+
+span {
+  display: none;
+}
+
+.red {
+  color: #f81227 !important;
+}
+
+.white {
+  color: #fff;
+}
+
+#main .bg_mision {
+  background: url("/images/bg_our_mision.png") no-repeat center;
+  height: 1080px;
+}
+
+#main .mision {
+  width: 707px;
+  float: right;
+  margin-right: 40px;
+  margin-top: 160px;
+}
+
+#main .mision p {
+  font-size: 200%;
+}
+
+.sneg {
+  font-size: 300%;
+}
+
+#main .text_bottom {
+  font-size: 140% !important;
+}
+
+#main .icon_left {
+  color: #f81227;
+  position: absolute;
+  font-size: 280% !important;
+  margin: 23px 0px 0px -30px;
+}
+
+#main .mision .table {
+  margin-left: 30px;
+}
+
+#main .manufacturers {
+  background: url("/images/bg_ecosystem.png") no-repeat right;
+  height: 1080px;
+  text-align: center;
+}
+
+#main .manufacturers h3 {
+  padding-top: 260px;
+  font-size: 200%;
+  margin: 0;
+}
+
+#main .manufacturers p {
+  font-size: 130%;
+}
+#main .manufacturers figure {
+  margin: 0;
+  height: 150px;
+  width: 235px;
+  background-color: #3a3a3a;
+  padding: 35px 15px 0 15px;
+}
+
+#main .manufacturers figcaption {
+  color: #fff;
+  margin-top: 10px;
+}
+
+#main .manufacturers .cell {
+  padding: 10px;
+}
+
+footer {
+  background-color: #3a3a3a;
+  border-top: 1px solid #fff;
+  height: 285px;
+}
+
+footer .left {
+  margin-left: 140px;
+  margin-top: 40px;
+}
+
+footer .table {
+  margin-right: 140px
+}
+
+footer .left a {
+  text-decoration: none;
+}
+
+footer .lang {
+  margin: 0;
+  font-size: 90%;
+}
+
+footer h4 {
+  color: #fff;
+  font-size: 150%;
+}
+
+footer .cell {
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+
+footer .table p {
+  font-size: 120%;
+  margin: 13px 0 0;
+}
+
+#bg_header {
+  background: none;
+}
+
+header .bg_transform {
+ width: 0;
+ height: 0;
+ border-top: 350px solid transparent;
+ border-left: 500px solid red;
+ border-bottom: 350px solid transparent;
+ transform: rotate(83deg);
+ margin-top: 200px;
+}
+
+header .text_transform {
+  margin: -595px 0px 0px 137px;
+  position: relative;
+}
+
+header .text_transform p {
+  width: 270px;
+  font-size: 165%;
+word-wrap: break-word;
+}
+
+header .text_transform h3 {
+  font-size: 300%;
+  margin: 0;
+}
+
+
+
+#aboutus .table .row .cell:nth-child(1) {
+  padding-right: 40px;
+}
+
+#aboutus h3 {
+    font-size: 200%;
+    margin: 0  0 10px 0;
+}
+
+#aboutus p {
+  font-size: 120%;
+  margin: 10px 0;
+}
+
+#aboutus .border_right {
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-left: 10px solid #a4161a;
+  border-bottom: 5px solid transparent;
+  transform: rotate(87deg);
+  margin-top: 18px;
+}
+
+#aboutus .border_top {
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-left: 10px solid #a4161a;
+  border-bottom: 5px solid transparent;
+  transform: rotate(40deg);
+  margin-top: 25px;
+}
+
+#aboutus .border_left {
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-left: 10px solid #a4161a;
+  border-bottom: 5px solid transparent;
+  transform: rotate(0deg);
+  margin-top: 16px;
+}
+
+#aboutus .padding {
+  padding-right: 20px !important;
+}
+
+#aboutus .top {
+  margin-top: 20px;
+}
+
+#aboutus .img_top {
+  background: url("/images/img.png") no-repeat top;
+  transform: rotate(40deg);
+  margin-top: 80px;
+  height: 288px;
+}
+
+#aboutus .img_bottom {
+  background: url("/images/aboutus_bg_bottom.png") no-repeat left;
+  margin-left: 20px;
+  height: 288px;
+}
+
+#aboutus .bg_aboutus .table {
+  margin-top: -250px;
+}
+
+.detext {
+  font-size: 157% !important;
+  margin-left: 20px !important;
+}
+
+.deh3 {
+  margin-left: 20px !important;
+}
+
+#aboutus .bg_aboutus {
+  background-color: #1c1c1c;
+  display: inline-block;
+  width: 100%;
+}
+
+#aboutus .distributor .table {
+  margin-top: 0;
+  padding-left: 10px;
+}
+
+#aboutus .distributor .content {
+  width: 316px;
+}
+
+#aboutus .distributor .content p {
+  color: #ed1b23;
+  margin: 0;
+}
+
+#aboutus .distributor  h4 {
+  margin: 0px 0 20px 0;
+  color: #fff;
+  font-size: 200%;
+}
+
+
+#aboutus .distributor_img_top {
+  background: url("/images/img.png") no-repeat top;
+  transform: rotate(93deg);
+  height: 288px;
+  margin-top: 25px;
+}
+
+#aboutus .distributor_img_bottom {
+  background: url("/images/aboutus_bg_bottom.png") no-repeat left bottom;
+  height: 288px;
+  margin-top: -156px;
+}
+
+#aboutus .distributor {
+  background-color: #1c1c1c;
+  display: inline-block;
+  height: 700px;
+  width: 100%;
+  margin-top: -5px;
+}
+
+#aboutus .distributor .position {
+  margin-top: -220px;
+}
+
+#aboutus .distributor .work .row .cell:nth-child(1) {
+  padding-right: 20px;
+}
+
+#aboutus .distributor .border_right {
+  margin-top: 20px;
+}
+
+#aboutus .distributor .border_top {
+  margin-top: 20px;
+}
+
+#aboutus .distributor .last {
+  margin-top: 15px;
+}
+
+.distributorsize {
+  font-size: 172% !important;
+}
+
+.distributorH4 {
+  font-size: 172% !important;
+}
+
+.changedistributorH4 {
+  font-size: 168% !important; 
+}
+
+.distributorH3 {
+  font-size: 180%;
+}
+
+.header_title_top {
+  font-size: 157% !important; 
+}
+
+#service {
+  background: url("/images/img_service.jpg") no-repeat;
+  display: inline-block;
+  width: 100%;
+  height: 1080px;
+  margin-top: -4px;
+}
+
+#service .bg_transform {
+  width: 0;
+  height: 0;
+  border-top: 300px solid transparent;
+  border-left: 450px solid red;
+  border-bottom: 300px solid transparent;
+  transform: rotate(100deg);
+}
+
+#service {
+  display: flex;
+}
+
+#service .right, #service .left {
+  margin: auto;
+}
+
+#service .right p {
+  font-size: 150%;
+}
+
+
+#service .right {
+  margin-top: 460px;
+}
+
+#service .position {
+  position: relative;
+  margin-bottom: -323px;
+  margin-left: 114px;
+  display: flex;
+  z-index: 100;
+}
+
+#service .position h2 {
+  position: relative;
+  color: #fff;
+  font-size: 280%;
+}
+
+.title_service {
+  margin-left: -22px;
+}
+
+.service_de {
+  margin-left: 24px;
+}
+
+#contacts {
+  float: left;
+  margin-top: 150px;
+  margin-left: 60px;
+}
+
+#contacts h3 {
+  font-size: 200%;
+  margin: 0 0 30px 0;
+}
+
+
+#contacts p {
+  font-size: 180%;
+  margin: 5px 0 0;
+}
+
+#contacts a {
+  color: #fff;
+  font-size: 180%;
+  text-decoration: none;
+  line-height: 42px;
+}
+
+#contacts .table .row .cell:nth-child(1) {
+  padding-bottom: 40px;
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 1080px) {
+  h1 {
+    font-size: 335% !important;
+  }
+}
+

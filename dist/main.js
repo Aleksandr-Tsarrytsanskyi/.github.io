@@ -1,0 +1,79 @@
+/*
+ * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+/******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/styles/style.scss":
+/*!*******************************!*\
+  !*** ./src/styles/style.scss ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://my-webpack-project/./src/styles/style.scss?");
+
+/***/ }),
+
+/***/ "./src/main.ts":
+/*!*********************!*\
+  !*** ./src/main.ts ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/style.scss */ \"./src/styles/style.scss\");\n\ndocument.addEventListener(\"DOMContentLoaded\", init);\nfunction init() {\n    var homeTexts = {\n        \"home\": {\n            \"ua\": \"Додому\",\n            \"de\": \"Heim\",\n            \"pl\": \"Dom\",\n            \"en\": \"\"\n        },\n        \"aboutus\": {\n            \"ua\": \"Про нас\",\n            \"de\": \"über uns\",\n            \"pl\": \"Onas\",\n            \"en\": \"\"\n        },\n        \"contact\": {\n            \"ua\": \"Контакт\",\n            \"de\": \"Kontakt\",\n            \"pl\": \"Kontakt\",\n            \"en\": \"\"\n        },\n        \"feedback\": {\n            \"ua\": \"Зворотній зв'язок\",\n            \"de\": \"Rückmeldung\",\n            \"pl\": \"Informacja zwrotna\",\n            \"en\": \"\"\n        },\n        \"title\": {\n            \"ua\": \"ELPOW-Компанія\",\n            \"de\": \"ELPOW-Unternehmen\",\n            \"pl\": \"ELPOW-Firma\",\n            \"en\": \"ELPOW-Company\"\n        },\n        \"h1\": {\n            \"ua\": \"Дистриб’ютор нового покоління  <br>з повним набором послуг <br>і доданою вартістю\",\n            \"de\": \"Full-Service-Value-Added-Distributor <br>der neuen Generation\",\n            \"pl\": \"Dystrybutor o wartości dodanej nowej generacji oferujący pełen zakres usług\",\n            \"en\": \"\"\n        },\n        \"titlevision\": {\n            \"ua\": \"Наше бачення\",\n            \"de\": \"Unsere Vision\",\n            \"pl\": \"Nasza wizja\",\n            \"en\": \"\"\n        },\n        \"ourvisiontop\": {\n            \"ua\": \"Ми прагнемо змінити традиційний підхід до дистрибуції та стати стратегічним партнером для виробників електроніки, розробників інформаційних технологій та клієнтів, сприяючи їхньому успіху та розкриваючи потенціал кожного продукту.\",\n            \"de\": \"Mein Ziel ist es, traditionelle Vertriebsstrategien und Partnerschaften für Elektro- und Elektronikunternehmen zu entwickeln. Kunden, die sich auf eine erfolgreiche Zusammenarbeit mit einem potenziellen Kunden freuen.\",\n            \"pl\": \"Mein Ziel ist es, tradycjielle Vertriebsstrategien und Partnerschaften für Elektro- und Elektronikunternehmen zu entwickeln. Kunden, die sich auf eine erfolgreiche Zusammenarbeit mit einem potenziellen Kunden freuen.\",\n            \"en\": \"\"\n        },\n        \"ourvisionbottom\": {\n            \"ua\": \"Ми впроваджуємо інновації та розширюємо свою присутність на ринках України та світу. Наше партнерство базується на прозорих взаємовигідних відносинах, спільних цілях і довірі.\",\n            \"de\": \"We implement innovations and expand their presence on the markets of Ukraine and the world. Our partnership is based on transparent mutually beneficial relations, common goals and trust.\",\n            \"pl\": \"We implement innovations and expand their presence on the markets of Ukraine and the world. Our partnership is based on transparent mutually beneficial relations, common goals and trust.\",\n            \"en\": \"\"\n        },\n        \"titlemission\": {\n            \"ua\": \"Наша місія:\",\n            \"de\": \"Unsere Aufgabe:\",\n            \"pl\": \"Nasza misja:\",\n            \"en\": \"\"\n        },\n        \"ourmission\": {\n            \"ua\": \"Створення ефективної екосистеми між виробниками електроніки та партнерами для синергії бізнесу та розвитку раціонального життя споживачів з інформаційними технологіями та пристроями.\",\n            \"de\": \"Schaffung eines effektiven Ökosystems zwischen Elektronikherstellern und Partnern für Geschäftssynergien und die Entwicklung eines rationalen Lebens der Verbraucher mit Informationstechnologien und -geräten.\",\n            \"pl\": \"Stworzenie efektywnego ekosystemu pomiędzy producentami elektroniki i partnerami dla synergii biznesowej i rozwoju racjonalnego życia konsumentów dzięki technologiom i urządzeniom informatycznym\",\n            \"en\": \"\"\n        },\n        \"ecosystem\": {\n            \"ua\": \"наша ефективна екосистема – це мережа відносин, яка самовдосконалюється та сприяє продуктивності, інноваціям і конкурентоспроможності всіх учасників.\",\n            \"de\": \"Unser effektives Ökosystem – es ist ein Netzwerk von Beziehungen, das sich selbst verbessert und die Produktivität, Innovation und Wettbewerbsfähigkeit aller Teilnehmer fördert.\",\n            \"pl\": \"nasz efektywny ekosystem - to sieć relacji, która samodoskonali się i promuje produktywność, innowacyjność i konkurencyjność wszystkich uczestników.\",\n            \"en\": \"\"\n        },\n        \"titledistributor\": {\n            \"ua\": \"Дистриб’ютор із доданою вартістю\",\n            \"de\": \"Mehrwertverteiler\",\n            \"pl\": \"Dystrybutor z wartością dodaną\",\n            \"en\": \"\"\n        },\n        \"distributor\": {\n            \"ua\": \"Філософія ELPOW полягає в тому будувати міцні відносини з виробниками та розвивати бренди на ринку на основі партнерської співпраці. Наша бізнес-стратегія базується на довгострокових цілях та інвестиціях, які окупляться в майбутньому.\",\n            \"de\": \"ELPOW ist Aufbau starker Beziehungen zu Herstellern und Entwicklung von Marken auf dem Markt auf der Grundlage einer partnerschaftlichen Zusammenarbeit. Unsere Geschäftsstrategie basiert auf langfristigen Zielen und Investitionen, die sich auszahlen in der Zukunft.\",\n            \"pl\": \"Filozofią ELPOW jest budować silne relacje z producentami i rozwijać marki na rynku w oparciu o partnerską współpracę. Nasza strategia biznesowa opiera się na długoterminowych celach i inwestycjach, które się opłacią w przyszłości.\",\n            \"en\": \"\"\n        },\n        \"titlework\": {\n            \"ua\": \"Чому варто працювати з нами?\",\n            \"de\": \"mit uns zusammenzuarbeiten?\",\n            \"pl\": \"Dlaczego warto z nami współpracować?\",\n            \"en\": \"\"\n        },\n        \"p1\": {\n            \"ua\": \"Усі наші процеси автоматизовані.\",\n            \"de\": \"sind automatisiert.\",\n            \"pl\": \"Wszystkie nasze procesy są zautomatyzowane.\",\n            \"en\": \"\"\n        },\n        \"p2\": {\n            \"ua\": \"Ми оперативні в роботі та спілкуванні.\",\n            \"de\": \"Arbeit und Kommunikation zeitnah.\",\n            \"pl\": \"Jesteśmy szybcy w naszej pracy i komunikacji.\",\n            \"en\": \"\"\n        },\n        \"p3\": {\n            \"ua\": \"Ми чесні та прозорі.\",\n            \"de\": \"Wir sind ehrlich und transparent.\",\n            \"pl\": \"Jesteśmy uczciwi i przejrzyści.\",\n            \"en\": \"\"\n        },\n        \"p4\": {\n            \"ua\": \"У нас сучасний підхід до бізнесу.\",\n            \"de\": \"Wir haben einen modernen Geschäftsansatz.\",\n            \"pl\": \"Mamy nowoczesne podejście do biznesu.\",\n            \"en\": \"\"\n        },\n        \"p5\": {\n            \"ua\": \"Ми на крок попереду технологічних трендів і пропонуємо передові рішення.\",\n            \"de\": \"Wir haben einen modernen Geschäftsansatz.\",\n            \"pl\": \"Mamy nowoczesne podejście do biznesu.\",\n            \"en\": \"\"\n        },\n        \"p6\": {\n            \"ua\": \"Ми даємо більше, ніж ви очікуєте.\",\n            \"de\": \"Wir geben mehr, als Sie erwarten.\",\n            \"pl\": \"Dajemy więcej niż oczekujesz.\",\n            \"en\": \"\"\n        },\n        \"titlecommerce\": {\n            \"ua\": \"Електронна комерція для виробників\",\n            \"de\": \"E-Commerce für Hersteller\",\n            \"pl\": \"E-commerce dla producentów\",\n            \"en\": \"\"\n        },\n        \"commerce\": {\n            \"ua\": \"Ми використовуємо всі важливі та ефективні інструменти для залучення клієнтів та збільшення продажів. Ось кілька кроків, які можуть бути корисними для вашої компанії:\",\n            \"de\": \"Wir nutzen alle wichtigen und wirksamen Instrumente, um Kunden zu gewinnen und den Umsatz zu steigern. Hier sind einige Schritte, die für Ihr Unternehmen hilfreich sein können:\",\n            \"pl\": \"Wykorzystujemy wszystkie ważne i skuteczne narzędzia, aby pozyskać klientów i zwiększyć sprzedaż. Oto kilka kroków, które mogą być pomocne dla Twojej firmy:\",\n            \"en\": \"\"\n        },\n        \"p7\": {\n            \"ua\": \"присутність на ринки\",\n            \"de\": \"Präsenz auf Marktplätze\",\n            \"pl\": \"obecność na targowiska\",\n            \"en\": \"\"\n        },\n        \"p8\": {\n            \"ua\": \"інтеграція онлайн система оплати\",\n            \"de\": \"Integration des Online Bezahlsystem\",\n            \"pl\": \"integracja internetu system płatności\",\n            \"en\": \"\"\n        },\n        \"p9\": {\n            \"ua\": \"ефективний контроль запасів і обробка замовлень\",\n            \"de\": \"effektive Bestandskontrolle und Auftragsabwicklung\",\n            \"pl\": \"efektywna kontrola zapasów i realizacja zamówień\",\n            \"en\": \"\"\n        },\n        \"p10\": {\n            \"ua\": \"відділ продажів, який опрацьовує замовлення та контролює клієнта на кожному етапі взаємодії\",\n            \"de\": \"die Vertriebsabteilung, die Bestellungen für den Kunden bearbeitet und den Kunden in jeder Phase der Interaktion überwacht\",\n            \"pl\": \"dział sprzedaży, który realizuje zamówienia i monitoruje klienta na każdym etapie interakcji\",\n            \"en\": \"\"\n        },\n        \"p11\": {\n            \"ua\": \"e-mail - маркетинг\",\n            \"de\": \"E-Mail Marketing\",\n            \"pl\": \"e-mail - marketing\",\n            \"en\": \"\"\n        },\n        \"p12\": {\n            \"ua\": \"юридичний супровід\",\n            \"de\": \"Rechtsbeistand\",\n            \"pl\": \"wsparcie prawne\",\n            \"en\": \"\"\n        },\n        \"contacts\": {\n            \"ua\": \"Контакти\",\n            \"de\": \"Kontakte\",\n            \"pl\": \"Łączność\",\n            \"en\": \"\"\n        }\n    };\n    var language = document.querySelector(\"header .hover\");\n    var lastchild = document.querySelector(\"#lng\");\n    var languageColor = document.querySelector(\"header .english\");\n    var images_lang = document.querySelector(\"header #language\");\n    var langButtons = document.querySelectorAll(\"[data-btn]\");\n    var currentLang = \"ua\";\n    var currentPathName = window.location.pathname;\n    var currentTexts = {};\n    language.addEventListener(\"mouseover\", function (event) {\n        languageColor.classList.toggle(\"red\");\n        lastchild.classList.add(\"show_anime\");\n        addImageLenguage(images_lang, \"hide\");\n    });\n    lastchild.addEventListener(\"mouseout\", function (event) {\n        lastchild.classList.remove(\"show_anime\");\n        languageColor.classList.add(\"white\");\n        addImageLenguage(images_lang, \"show\");\n    });\n    function checkPagePathName() {\n        switch (currentPathName) {\n            case \"/index.html\":\n                currentTexts = homeTexts;\n                break;\n            // case \"/another_page.html\":\n            // \tcurrentTexts = anotherTexts;\n            // \tbreak;\n            default:\n                currentTexts = homeTexts;\n                break;\n        }\n    }\n    checkPagePathName();\n    // Изменение языка у текстов\n    function changeLang() {\n        for (var key in currentTexts) {\n            var elem = document.querySelector(\"[data-lang=\".concat(key, \"]\"));\n            if (elem) {\n                elem.innerHTML = currentTexts[key][currentLang];\n            }\n        }\n    }\n    changeLang();\n    function addImageLenguage(elem, addclassList) {\n        return elem.classList.add(addclassList);\n    }\n    function removeClassList(elem, addclassList) {\n        return elem.classList.remove(addclassList);\n    }\n    langButtons.forEach(function (btn) {\n        btn.addEventListener(\"click\", function (event) {\n            if (!event.target.classList.contains(\"header__btn_active\")) {\n                currentLang = event.target.dataset.btn;\n                var evtive = event.target.innerHTML;\n                languageColor.textContent = evtive;\n                changeLang();\n            }\n        });\n    });\n}\n\n\n//# sourceURL=webpack://my-webpack-project/./src/main.ts?");
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/main.ts");
+/******/ 	
+/******/ })()
+;

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Webpack App</title>
+        <meta charset="UTF-8">
+            <link rel="stylesheet" href="./dist/styles/style.css" type="text/css">
+            <link rel="stylesheet" href="./dist/styles/bg_none.css" type="text/css">
+            <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script  type="module" src="./javascript/language/lang.js"></script>
+            <script  type="module"  src="./src/main.js"></script>
+            <script  type="module"  src="./src/languagetranslation.js"></script>
+            <script src="./javascript/aos.js"></script>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title data-lang="title">ELPOW-Comapny</title>
+            <script defer src="main.js"></script></head>
+    </head>
+<body>     
+                <div id="container">
+                    <header>
+                        <div class="bg_top">
+                            <div class="logo">
+                                <a href="/index.html">
+                                    <img src="images/logo.png" alt="Логотип" >
+                                    <p class="lang" data-lang="logo">power of change</p>
+                                </a>
+                            </div>
+                            <div class="topmenu">
+                                <ul>
+                                    <li>
+                                        <a href="/index.html" data-lang="home">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="/aboutus.html" data-lang="aboutus">Abou Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="/contacts.html" data-lang="contact">Contact</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-lang="feedback">Feedback</a>
+                                    </li>
+                                    <li class="hover">
+                                        <img class="hover_lng" src="images/hover_languag.png">
+                                        <img id="language"src="images/languag.png" alt="Язык">
+                                        <a class="english" href="#">English</a>
+                                        <div id="hide_lng">
+                                            <ul id="lng">
+                                                <li class="de">
+                                                    <img src="images/de.png" alt="Германия">
+                                                    <a href="#" data-btn="de" class="lang btn" value="de">Germany</a>
+                                                </li>
+                                                <li class="pl">
+                                                    <img src="images/pl.png" alt="Порльша">
+                                                    <a href="#" class="lang" data-btn="pl" value="pl">Poland</a>
+                                                </li>
+                                                <li class="ua">
+                                                    <img src="images/ua.png" alt="Украина">
+                                                    <a href="#" class="lang" data-btn="ua" value="ua">Ukraine</a>
+                                                </li>
+                                                <li class="eng">
+                                                    <img src="images/eng.png" alt="Англия">
+                                                    <a href="#" class="lang" data-btn="en" value="ua">English</a>
+                                                </li>
+                                            </ul>
+                                        </div>    
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> 
+                            <div class="bg_transform"></div>
+                            <div class="text_transform">
+                                <h3 data-lang="titleaboutus">About us</h3>
+                                <p data-lang="topcontent">Our modern business philosophy, flexibility in a rapidly changing world, as well as our commitment and motivation, helped us stand out in the distribution market.</p>
+                            </div>  
+                    </header>
+                    <div id="aboutus">
+                        <div class="bg_aboutus">
+                        <div class="img_top"></div>
+                           <div class="table">
+                            <h3 data-lang="trustus">Why you can trust us:</h3>
+                                <div class="row">
+                                    <div class="cell">
+                                        <div class="row">
+                                            <div class="cell padding">
+                                                <div class="border_right"></div>
+                                            </div>
+                                            <div class="cell">
+                                                <p data-lang="text">we approach work comprehensively. You don't <br>need to look for third-party organizations or<br> resources to complete this or that process.</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="cell padding">
+                                                <div class="border_right"></div>
+                                            </div>
+                                            <div class="cell">
+                                                <p data-lang="text1">we have all the tools, resources and <br>mechanisms to promote products.</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="cell padding">
+                                                <div class="border_top"></div>
+                                            </div>
+                                            <div class="cell">
+                                                <p data-lang="text2">our staff includes experts in marketing, sales, <br>law and analytics, who understand effective<br> promotion and ensuring the life of a product.</p>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="cell">
+                                        <div class="row">
+                                            <div class="cell padding">
+                                                <div class="border_right"></div>
+                                            </div>
+                                            <div class="cell">
+                                                <p data-lang="text3">we are engaged in a full range of services: from<br> introduction to the market, to legal support, testing<br> and promotion of the product on the market.</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="cell padding">
+                                                <div class="border_right top"></div>
+                                            </div>
+                                            <div class="cell">
+                                                <p data-lang="text4">we have an open policy.</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="cell padding">
+                                                <div class="border_top"></div>
+                                            </div>
+                                            <div class="cell">
+                                                <p data-lang="text5">we will create a strategy together - transparently and<br> mutually beneficial.</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="cell padding">
+                                                <div class="border_left"></div>
+                                            </div>
+                                            <div class="cell">
+                                                <p data-lang="text6">we work on all marketplace platforms and have a<br> sales department.</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="cell padding top">
+                                                <div class="border_right top"></div>
+                                            </div>
+                                            <div class="cell">
+                                                <p data-lang="text7">we have our own service center.</p>
+                                            </div>
+                                        </div>
+                                    </div>       
+                                </div>    
+                           </div> 
+                       <div class="img_bottom"></div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="distributor">
+                        <div class="distributor_img_top"></div>
+                        <div class="position">
+                            <div class="table">
+                                <div class="row">
+                                    <div class="cell">
+                                        <h4 data-lang="titledistributor">Value-added distributor</h4>
+                                        <div class="content">
+                                            <p data-lang="distributor">The philosophy of ELPOW is to build strong relationships with manufacturers and develop brands on the market based on partnership cooperation. Our business strategy is based on long-term goals and investments that will pay off in the future.</p>
+                                        </div>
+                                    </div>
+                                    <div class="cell">
+                                        <h3 data-lang="titlework">Why it is worth to work with us?</h3>
+                                        <div class="table work">
+                                            <div class="row">
+                                                <div class="cell">
+                                                    <div class="border_right"></div>
+                                                </div>
+                                                <div class="cell">
+                                                    <p data-lang="p1">All our processes are automated</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="cell">
+                                                    <div class="border_right"></div>
+                                                </div>
+                                                <div class="cell">
+                                                    <p data-lang="p2">We are prompt in our work and communications.</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="cell">
+                                                    <div class="border_right"></div>
+                                                </div>
+                                                <div class="cell">
+                                                    <p data-lang="p3">We are honest and transparent</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="cell">
+                                                    <div class="border_top"></div>
+                                                </div>
+                                                <div class="cell">
+                                                    <p data-lang="p4">We have a modern approach to business.</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="cell">
+                                                    <div class="border_left"></div>
+                                                </div>
+                                                <div class="cell">
+                                                    <p data-lang="p5">We are one step ahead of technological trends and <br>offer advanced solutions.</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="cell">
+                                                    <div class="border_left last"></div>
+                                                </div>
+                                                <div class="cell">
+                                                    <p data-lang="p6">We give more than you expect.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                        <div class="distributor_img_bottom"></div>
+                    </div>   
+                    </div>
+                    <div id="service">
+                        <div class="left">
+                            <div class="position">
+                                <h2 data-lang="titleservice">After-sales <br>service for<br> manufacturers</h2>
+                            </div>
+                                <div class="bg_transform"></div>  
+                            </div>
+                            <div class="right">
+                            <p data-lang="servicetext1">One of our additional capabilities that we <br> offer to our partners is the provision of<br> maintenance services.</p>
+                            <p data-lang="servicetext2">Our staff includes licensed engineers and<br> employees. Interaction with the client is based on<br> honest and transparent communication.</p>
+                            <p data-lang="servicetext3">The company's policy is aimed at constant<br> improvement of repair technologies and methods.</p>
+                        </div>
+                    </div>
+                    <footer>
+                        <div class="left">
+                          <a href="/index.html">
+                              <img src="images/footer_logo.png" alt="Логотип" >
+                              <p class="lang">power of change</p>
+                          </a> 
+                        </div>  
+                        <div class="right">
+                          <h4 data-lang="contacts">Contacts</h4>
+                          <div class="table">
+                              <div class="row">
+                                  <div class="cell">
+                                      <img src="./images/phone.png" alt="Phone">
+                                  </div>
+                              </div>
+                              <div class="row">
+                                  <div class="cell">
+                                      <img src="./images/e-mail.png" alt="E-mail">
+                                  </div>
+                                  <div class="cell">
+                                      <p>contact@elpow.com.ua</p>
+                                  </div>
+                              </div>
+                              <div class="row">
+                                  <div class="cell">
+                                      <img src="./images/sites.png" alt="Site">
+                                  </div>
+                                  <div class="cell">
+                                      <p>elpow.com.ua</p>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                  </footer>     
+                </div>
+</body>
+</html>
