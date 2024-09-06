@@ -505,8 +505,8 @@ function init() {
     }
   });
 
+  let error = document.createElement("span");
   function errorMessage(elem) {
-    let error = document.createElement("span");
     elem.after(error);
     error.classList.add("error");
     error.textContent = "Обезательное поле*";
