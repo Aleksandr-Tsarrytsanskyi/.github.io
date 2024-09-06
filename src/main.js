@@ -509,7 +509,8 @@ function init() {
     fetch("/php/sendEmail.php", {
       method: "POST",
       body: formData,
-      headers: { "Content-Type": "application/json;charset=utf-8" },
+      // headers: { "Content-Type": "application/json;charset=utf-8" },
+      mode: 'no-cors'
     }).catch(() => {
       console.log("Error");
       
