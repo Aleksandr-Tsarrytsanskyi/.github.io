@@ -1,5 +1,5 @@
 header {
-    background: url("/images/bg_main.jpg");
+    background: url("/images/bg_main.jpg") no-repeat center;
 }
 
 header .bg_top {

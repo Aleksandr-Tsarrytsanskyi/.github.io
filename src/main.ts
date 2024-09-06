@@ -1,9 +1,10 @@
 import {languages} from "./intarface"
-import "./styles/style.scss"
+
 
 
 document.addEventListener("DOMContentLoaded", init);
 function init() {
+    
    const homeTexts: languages = {  
       "home" : {
           "ua": "Додому",

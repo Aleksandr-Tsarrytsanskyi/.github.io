@@ -1,4 +1,16 @@
 header {
-    background: url("/images/contacts.png") no-repeat right;
-    height: 930px;
+    background: none;
+}
+
+body {
+    background-color: #2c2c2c;
+}
+
+#bg_contacts {
+    background: url("/images/bg_contact.png") no-repeat right;
+    height: 100%;
+}
+
+header .bg_top {
+    background: none;
 }

@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", init);
-
- function init() {
-   const homeTexts = {
+import { validateContactForm } from "./js/validateform.js";
+function init() {
+  
+  const homeTexts = {
     logo: {
       ua: "сила змін",
       de: "Kraft der Veränderung",
@@ -417,51 +418,178 @@ document.addEventListener("DOMContentLoaded", init);
       ua: "Гарантійне обслуговування виробників",
       de: "After-Sales-Service für Hersteller",
       pl: "Obsługa posprzedażowa dla producentów",
-      en: "After-sales service for manufacturers",
+      en: "After-sales <br>service for manufacturers",
     },
     servicetext1: {
-      ua: "Одна з наших додаткових можливостей, яку ми пропозицією для наших партнерів є надання послуг з обслуговування.",
-      de: "Eine unserer zusätzlichen Leistungen, die wir unseren Partnern anbieten, ist die Bereitstellung von Wartungsdiensten.",
-      pl: "Jedną z naszych dodatkowych możliwości, którą oferujemy naszym partnerom, jest świadczenie usług konserwacyjnych.",
-      en: "One of our additional capabilities that we offer to our partners is the provision of maintenance services.",
+      ua: "Одна з наших додаткових можливостей, <br>яку ми пропозицією для наших партнерів <br>є надання послуг з обслуговування.",
+      de: "Eine unserer zusätzlichen Leistungen, <br>die wir unseren Partnern anbieten, <br>ist die Bereitstellung von Wartungsdiensten.",
+      pl: "Jedną z naszych dodatkowych możliwości,<br> którą oferujemy naszym partnerom, <br>jest świadczenie usług konserwacyjnych.",
+      en: "One of our additional capabilities <br>that we offer to our partners is the<br> provision of maintenance services.",
     },
     servicetext2: {
-      ua: "Наш штат включає ліцензованих інженерів та співробітників. Взаємодія з клієнтом базується на чесному та прозорому спілкуванні.",
-      de: "Zu unserem Personal gehören lizenzierte Ingenieure und Angestellte. Die Interaktion mit dem Kunden basiert auf ehrlicher und transparenter Kommunikation.",
-      pl: "Nasz personel obejmuje licencjonowanych inżynierów i pracowników. Interakcja z klientem opiera się na uczciwej i przejrzystej komunikacji.",
-      en: "Our staff includes licensed engineers and employees. Interaction with the client is based on honest and transparent communication.",
+      ua: "Наш штат включає ліцензованих інженерів<br> та співробітників. Взаємодія з клієнтом базується<br> на чесному та прозорому спілкуванні.",
+      de: "Zu unserem Personal gehören lizenzierte<br> Ingenieure und Angestellte. Die Interaktion mit <br>dem Kunden basiert auf ehrlicher<br> und transparenter Kommunikation.",
+      pl: "Nasz personel obejmuje licencjonowanych <br>inżynierów i pracowników. Interakcja z klientem opiera<br> się na uczciwej i przejrzystej komunikacji.",
+      en: "Our staff includes licensed engineers and <br>employees.Interaction with the client is based<br> on honest and transparent communication.",
     },
     servicetext3: {
-      ua: "Політика компанії спрямована на постійне вдосконалення технологій і методів ремонту.",
-      de: "Die Unternehmenspolitik zielt auf eine ständige Verbesserung der Reparaturtechnologien und -methoden ab.",
-      pl: "Polityka firmy ukierunkowana jest na ciągłe doskonalenie technologii i metod napraw.",
-      en: "The company's policy is aimed at constant improvement of repair technologies and methods.",
+      ua: "Політика компанії спрямована на постійне<br> вдосконалення технологій і методів ремонту.",
+      de: "Die Unternehmenspolitik zielt auf eine ständige <br>Verbesserung der Reparaturtechnologien und -methoden ab.",
+      pl: "Polityka firmy ukierunkowana jest na ciągłe<br> doskonalenie technologii i metod napraw.",
+      en: "The company's policy is aimed at constant <br>improvement of repair technologies and methods.",
     },
     contacts: {
       ua: "Контакти",
       de: "Kontakte",
       pl: "Łączność",
       en: "Сontacts",
-    }
-  }
+    },
+  };
   const language = document.querySelector("header .hover");
   const lastchild = document.querySelector("#lng");
   const ua = document.querySelector("header .ua");
   const de = document.querySelector("header .de");
   const pl = document.querySelector("header .pl");
   const eng = document.querySelector("header .eng");
-  const headerContent  = document.querySelector("header .text_transform p");
-  const service  = document.querySelector("#service .position h2");
-  const aboutusH3  = document.querySelector("#aboutus h3");
-  const distributorH4  = document.querySelector("#aboutus .distributor h4");
-  console.log(distributorH4);
+  const headerContent = document.querySelector("header .text_transform p");
+  const service = document.querySelector("#service .position");
+  const aboutusH3 = document.querySelector("#aboutus h3");
+  const distributorH4 = document.querySelector("#aboutus .distributor h4");
+  const feedback = document.querySelector("#feedback");
+  const position = document.querySelector("#position");
+  const close_form = document.querySelector("#close_form");
   const languageColor = document.querySelector("header .english");
   const images_lang = document.querySelector("header #language");
   const langButtons = document.querySelectorAll("[data-btn]");
+ 
   let currentLang = "en";
-
   const currentPathName = window.location.pathname;
   let currentTexts = {};
+  const contactForm = document.querySelector("#contact_form");
+  let element = contactForm.elements;
+  let { email, phone, companyname, message } = element;
+
+  // li.fromTo(".text_item", {opacity: 0, y: -50, 
+  // },{opacity: 1, y: 0, duraction: 5,}, 0.4)
+
+  // li.fromTo(".text_item1", {opacity: 0, y: -50, 
+  // },{opacity: 1, y: 0, duraction: 5,}, 1)
+
+  
+  contactForm.addEventListener("input", function (event) {
+    getemail(event.target);
+    getPhone(event.target);
+    getCompanyName(event.target)
+    getMessage(event.target)
+    })
+    
+  contactForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+    let elem = {
+      email: email.value,
+      phone: phone.value,
+      companyname: companyname.value,
+      message: message.value,
+    };
+    console.log("sfasfasf");
+    
+    contactApi(elem);
+    for(let elem of element) {
+     if (elem.valueOf.length == 0) {
+     elem.classList.add("validate_contact");
+      }
+      else if(elem.valueOf.length > 3) {
+        elem.classList.remove("validate_contact");
+        
+      }
+    }
+  });
+
+  function errorMessage(elem) {
+    let error = document.createElement("span");
+    elem.after(error);
+    error.classList.add("error");
+    error.textContent = "Обезательное поле*";
+    console.log("1");
+  }
+
+  // function after(elem) {
+  //   elem.after(error);
+  // }
+
+  function removeErrorMassage() {
+    let span = document.querySelector(".error").remove();
+    span.textContent = "";
+    span.classList.remove("error");
+  }
+
+  function validateContactForm(elem) {
+    elem.classList.add("validate_contact")
+  }
+
+  function getemail(elem) {
+    const regExpEmail = elem.getAttribute("data-reg");
+    const regExp = new RegExp(regExpEmail);
+    if (regExp.test(email.value)) {
+      removeClassList(email, "validate_contact");
+      removeErrorMassage();
+    } else {
+      errorMessage(elem);
+      addImageLenguage(elem, "validate_contact");
+    }
+  }
+
+  function getPhone(elem) {
+    const regExpEmail = elem.getAttribute("data-reg");
+    const regExp = new RegExp(regExpEmail);
+
+    if (regExp.test(phone.value)) {
+      removeClassList(phone, "validate_contact");
+      removeErrorMassage();
+    } else {
+      errorMessage(elem);
+      addImageLenguage(elem, "validate_contact");
+    }
+  }
+
+  function getCompanyName(elem) {
+    if(companyname.value.length < 3) {
+      errorMessage(elem);
+      addImageLenguage(elem, "validate_contact");
+    }
+    else {
+      removeClassList(companyname, "validate_contact");
+      removeErrorMassage();
+    }
+  }
+
+  function getMessage(elem) {
+    if(message.value.length < 10) {
+      errorMessage(elem);
+      addImageLenguage(elem, "validate_contact");
+    }
+    else {
+      removeClassList(message, "validate_contact");
+      removeErrorMassage();
+    }
+  }
+  close_form.addEventListener("click", function () {
+    position.classList.remove("show_form");
+    position.classList.add("hide_form");
+  });
+  feedback.addEventListener("click", function () {
+    position.classList.add("show_form");
+    position.classList.remove("hide_form");
+  });
+
+  function hideForm() {
+    position.classList.add("hide_form");
+    position.classList.remove("show_form");
+  }
+  function showForm() {
+    position.classList.add("show_form");
+    position.classList.remove("hide_form");
+  }
   language.addEventListener("mouseover", function (event) {
     changesAboutUs();
     languageColor.classList.add("red");
@@ -482,7 +610,7 @@ document.addEventListener("DOMContentLoaded", init);
         currentTexts = homeTexts;
         break;
       case "/aboutus.html":
-      	currentTexts = aboutUsTexts;
+        currentTexts = aboutUsTexts;
         langButtons.forEach((btn) => {
           btn.addEventListener("click", (event) => {
             lastchild.hidden = true;
@@ -494,41 +622,41 @@ document.addEventListener("DOMContentLoaded", init);
               if (btn.dataset.btn == "ua") {
                 addImageLenguage(aboutusH3, "distributorsize");
                 addImageLenguage(distributorH4, "distributorH4");
-                hideElement(ua)
+                hideElement(ua);
               } else {
-                showElement(ua)
+                showElement(ua);
                 removeClassList(aboutusH3, "distributorsize");
                 removeClassList(distributorH4, "distributorH4");
               }
               if (btn.dataset.btn == "de") {
-                hideElement(de)
-                addImageLenguage(headerContent, "header_title_top")
-                addImageLenguage(service, "service_de")
+                hideElement(de);
+                addImageLenguage(headerContent, "header_title_top");
+                addImageLenguage(service, "service_de");
               } else {
-                showElement(de)
-                removeClassList(headerContent, "header_title_top")
-                removeClassList(service, "service_de")
+                showElement(de);
+                removeClassList(headerContent, "header_title_top");
+                removeClassList(service, "service_de");
               }
               if (btn.dataset.btn == "pl") {
-                addImageLenguage(distributorH4, "distributorsize")
-                addImageLenguage(distributorH4, "changedistributorH4")
-                addImageLenguage(service, "title_service")
-                hideElement(pl)
+                addImageLenguage(distributorH4, "distributorsize");
+                addImageLenguage(distributorH4, "changedistributorH4");
+                addImageLenguage(service, "service_pl");
+                hideElement(pl);
               } else {
-                removeClassList(distributorH4, "distributorsize")
-                removeClassList(distributorH4, "changedistributorH4")
-                removeClassList(service, "title_service")
-                showElement(pl)
+                removeClassList(distributorH4, "distributorsize");
+                removeClassList(distributorH4, "changedistributorH4");
+                removeClassList(service, "service_pl");
+                showElement(pl);
               }
               if (btn.dataset.btn == "eng") {
-                hideElement(eng)
+                hideElement(eng);
               } else {
-                showElement(eng)
+                showElement(eng);
               }
             }
           });
         });
-      	break;
+        break;
 
       default:
         currentTexts = homeTexts;
@@ -548,6 +676,17 @@ document.addEventListener("DOMContentLoaded", init);
   }
   changeLang();
 
+  function contactApi(contact) {
+    fetch("/php/sendEmail.php", {
+      method: "POST",
+      body: JSON.stringify(contact),
+      headers: { "Content-Type": "application/json;charset=utf-8" },
+    }).catch(() => {
+      console.log("Error");
+      
+    })
+  }
+
   function addImageLenguage(elem, addclassList) {
     return elem.classList.add(addclassList);
   }
@@ -562,38 +701,37 @@ document.addEventListener("DOMContentLoaded", init);
   function showElement(element) {
     element.hidden = false;
   }
-function changesAboutUs() {
-  langButtons.forEach((btn) => {
-    btn.addEventListener("click", (event) => {
-      lastchild.hidden = true;
-      if (!event.target.classList.contains("header__btn_active")) {
-        currentLang = event.target.dataset.btn;
-        let evtive = event.target.innerHTML;
-        languageColor.textContent = evtive;
-        changeLang();
-        if (btn.dataset.btn == "ua") {
-          hideElement(ua)
-        } else {
-          showElement(ua)
+  function changesAboutUs() {
+    langButtons.forEach((btn) => {
+      btn.addEventListener("click", (event) => {
+        lastchild.hidden = true;
+        if (!event.target.classList.contains("header__btn_active")) {
+          currentLang = event.target.dataset.btn;
+          let evtive = event.target.innerHTML;
+          languageColor.textContent = evtive;
+          changeLang();
+          if (btn.dataset.btn == "ua") {
+            hideElement(ua);
+          } else {
+            showElement(ua);
+          }
+          if (btn.dataset.btn == "de") {
+            hideElement(de);
+          } else {
+            showElement(de);
+          }
+          if (btn.dataset.btn == "pl") {
+            hideElement(pl);
+          } else {
+            showElement(pl);
+          }
+          if (btn.dataset.btn == "eng") {
+            hideElement(eng);
+          } else {
+            showElement(eng);
+          }
         }
-        if (btn.dataset.btn == "de") {
-          hideElement(de)
-        } else {
-          showElement(de)
-        }
-        if (btn.dataset.btn == "pl") {
-          hideElement(pl)
-        } else {
-          showElement(pl)
-        }
-        if (btn.dataset.btn == "eng") {
-          hideElement(eng)
-        } else {
-          showElement(eng)
-        }
-      }
+      });
     });
-  });
-}
- 
+  }
 }

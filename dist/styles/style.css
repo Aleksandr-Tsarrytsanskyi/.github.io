@@ -9,6 +9,41 @@ body {
   margin: 0;
 }
 
+.icon {
+  width: 200px;
+  height: 200px;
+  fill: red;
+}
+
+[data-aos="custom"] {
+  transform: translateY(-100px);
+  opacity: 0;
+}
+[data-aos="custom"].aos-animate {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+
+.content .text_item, .text_item1 {
+  will-change: transform;
+}
+
+.error {
+  color: red;
+ display: block;
+ margin-top: 5px;
+ transition: all 0.3s;
+}
+
+.validate_contact {
+  border: 1px solid red !important;
+}
+
+.border {
+  border: none;
+}
+
 .left {
   float: left;
 }
@@ -520,6 +555,10 @@ header .text_transform h3 {
   font-size: 157% !important; 
 }
 
+.service_eng {
+  
+}
+
 #service {
   background: url("/images/img_service.jpg") no-repeat;
   display: inline-block;
@@ -559,6 +598,7 @@ header .text_transform h3 {
   margin-bottom: -323px;
   margin-left: 114px;
   display: flex;
+  width: 100px;
   z-index: 100;
 }
 
@@ -568,12 +608,13 @@ header .text_transform h3 {
   font-size: 280%;
 }
 
-.title_service {
-  margin-left: -22px;
+.service_de {
+  width: 228px !important;
 }
 
-.service_de {
-  margin-left: 24px;
+.service_pl {
+  width: 322px !important;
+  margin-left: 92px !important;
 }
 
 #contacts {
@@ -603,6 +644,97 @@ header .text_transform h3 {
 #contacts .table .row .cell:nth-child(1) {
   padding-bottom: 40px;
   padding-right: 20px;
+}
+
+#position {
+  transform: translate(-100%, 0%);
+  background: rgba(25, 154, 214, 0.3);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: fixed;
+  z-index: 100;
+  padding-top: 86px;
+}
+
+#contact {
+  display: flex;
+  width: 550px;
+  padding: 30px 0 20px 0;
+  margin: auto;
+  background: #fff;
+}
+
+#contact form {
+  margin: auto;
+}
+
+#contact form label {
+  font-weight: bold;
+  font-size: 150%;
+  color: #000;
+}
+
+#contact form input {
+  outline: none;
+  border: 1px solid  #777676;
+  padding-left: 10px;
+  width: 350px;
+  height: 40px;
+}
+
+#contact form div {
+  margin-bottom: 20px;
+}
+
+#contact .first_child {
+  margin-bottom: 20px;
+}
+
+#contact form textarea {
+  resize: none;
+  outline: none;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  width: 342px;
+  height: 150px;
+}
+
+#close_form {
+  background: url(/images/close_search.png) no-repeat right;
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  margin-left: 500px;
+  cursor: pointer;
+  margin-top: -15px;
+}
+
+#contact form .last {
+  margin-top: 20px;
+}
+
+#contact form input[type="submit"] {
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  width: 150px;
+  height: 50px;
+  display: block;
+  margin: auto;
+  background-color: #f81227;
+}
+
+.hide_form {
+  transform: (-100%, -100%);
+  transition: 0.5s;
+}
+
+.show_form {
+  transition: .5s !important;
+  opacity: 1 !important;
+  transform: translate(0) !important;
 }
 
 @media screen and (max-width: 1080px) {
