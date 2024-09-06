@@ -5,9 +5,9 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-require 'lib/src/Exception.php';
-require 'lib/src/PHPMailer.php';
-require 'lib/src/SMTP.php';
+require 'PHPMailer/src/Exception.php';
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/SMTP.php';
 
 //Create an instance; passing `true` enables exceptions
 $mail = new PHPMailer(true);
@@ -25,7 +25,7 @@ try {
     //Recipients
     $mail->setFrom('carekjustin2009@gmail.com', 'Администратор');
     $mail->addAddress('carekjustin2009@gmail.com');     //Add a recipient
-    $body = '<p>Email: '.$_POST['email'].'</p>' . '<p>User comment: '.$_POST['comment'].'</p>';
+    $body = '<p>Email: '.$_POST['email'].'</p>' . '<p>User phone: '.$_POST['phone'].'</p>' . '<p>User companyname: '.$_POST['companyname'].'</p>' . '<p>User message: '.$_POST['message'].'</p>';
 
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML

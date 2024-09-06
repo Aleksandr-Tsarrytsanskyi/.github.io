@@ -493,7 +493,7 @@ function init() {
     };
     console.log("sfasfasf");
     
-    contactApi(elem);
+    contactApi();
     for(let elem of element) {
      if (elem.valueOf.length == 0) {
      elem.classList.add("validate_contact");
@@ -504,7 +504,17 @@ function init() {
       }
     }
   });
-
+  function contactApi(contact) {
+    const formData = new FormData(contactForm);
+    fetch("/php/sendEmail.php", {
+      method: "POST",
+      body: formData,
+      headers: { "Content-Type": "application/json;charset=utf-8" },
+    }).catch(() => {
+      console.log("Error");
+      
+    })
+  }
   let error = document.createElement("span");
   function errorMessage(elem) {
     elem.after(error);
@@ -676,16 +686,6 @@ function init() {
   }
   changeLang();
 
-  function contactApi(contact) {
-    fetch("/php/sendEmail.php", {
-      method: "POST",
-      body: JSON.stringify(contact),
-      headers: { "Content-Type": "application/json;charset=utf-8" },
-    }).catch(() => {
-      console.log("Error");
-      
-    })
-  }
 
   function addImageLenguage(elem, addclassList) {
     return elem.classList.add(addclassList);
